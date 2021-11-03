@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My interface</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">Interface</header>
+    <div class="main">
+        <section class="wrapper">
+            <div class="data">
+                <div class="data__age">Age</div>
+                <div class="data__name">
+                    <div class="data__firstName">FirstName</div>
+                    <div class="data__lastName">lastName</div>
+                </div>
+                <div class="data__options">
+                    <div class="data__isMember">isMember</div>
+                    <div class="data__isMenager">isMenager</div>
+                    <div class="data__isAdmin">isAdmin</div>
+                    <div class="data__isFavorite">isFavorite</div>
+                </div>
+            </div>
+    
+            <div class="interface__button">
+                <div id="intBut" class="interface__button-text">Изменить данные</div>
+               
+            </div>
+        </section>
+
+        <section class="reWrapper">
+            <div class="reData">
+
+                <form action="app.js" method="get" enctype="multipart/form-data">
+    
+                    <div class="reData__age">
+                        <p class="reData__age-text">age: </p> 
+                        <input autocomplete="none" id="userAge" class="textInputs" name="userAge" tabindex="1" type="tel">
+                    </div>
+    
+                    <div class="reData__name">
+                        <div class="reData__firstName">
+                            <p>firstName: </p>
+                            <input autocomplete="none" id="reUserName" class="textInputs" name="userName" tabindex="2" type="text">
+                        </div>
+                        <div class="reData__lastName">
+                            <p>lastName: </p>
+                            <input autocomplete="none" id="reUserLastName" class="textInputs" name="userLastname" tabindex="3" type="text">
+                        </div>
+                    </div>
+    
+                    <div class="reData__options">
+                        <div class="reData__isMember">
+                            <p class="reData__isMember-text">isMember: </p>
+                            <input checked id="memberTrue" name="member" type="radio">
+                            <label class="labelTrue" for="memberTrue"> True </label>
+    
+                            <input id="memberFalse" name="member" type="radio">
+                            <label class="labelFalse" for="memberFalse"> False </label>
+                            
+                        </div>
+                        <div class="reData__isMenager">
+                            <p>isMenager: </p>
+                            <input checked id="managerTrue" name="manager" type="radio">
+                            <label class="labelTrue" for="managerTrue"> True </label>
+    
+                            <input id="managerFalse" name="manager" type="radio">
+                            <label class="labelFalse" for="managerFalse"> False </label>
+                        </div>
+                        <div class="reData__isAdmin">
+                            <p>isAdmin: </p>
+                            <input id="adminTrue" name="admin" type="radio">
+                            <label id="isAdminTrue" class="labelTrue" for="adminTrue"> True </label>
+    
+                            <input checked id="adminFalse" name="admin" type="radio">
+                            <label class="labelFalse" for="adminFalse"> False </label>
+                        </div>
+                        <div class="reData__isFavorite">
+                            <p>isFavorite: </p>
+                            <input id="favoriteTrue" name="favorite" type="radio">
+                            <label class="labelTrue" for="favoriteTrue"> True </label>
+    
+                            <input checked id="favoriteFalse" name="favorite" type="radio">
+                            <label class="labelFalse" for="favoriteFalse"> False </label>
+                        </div>
+                    </div>
+                </form> 
+                <div class="show__button">
+                    <div class="show__button-text">Показать данные</div>
+                </div>
+            </div>
+
+        </section>
+
+        
+        
+        
+    
+
+<script src="app.js"></script>
+</body>
+</html>
